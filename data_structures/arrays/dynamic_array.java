@@ -1,6 +1,7 @@
 package data_structures.arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
@@ -41,13 +42,13 @@ public class dynamic_array {
 
   public static void main(String[] args) {
     int n = 2;
-    int[][] queries = {
-      {1, 0, 5},
-      {1, 1, 7}, 
-      {1, 0, 3}, 
-      {2, 1, 0}, 
-      {2, 1, 1}
-    };
+    List<List<Integer>> queries = Arrays.asList(
+      Arrays.asList(1, 0, 5),
+      Arrays.asList(1, 1, 7),
+      Arrays.asList(1, 0, 3),
+      Arrays.asList(2, 1, 0),
+      Arrays.asList(2, 1, 1)
+    );
 
    List<Integer> result = dynamicArray(n, queries);
 

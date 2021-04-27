@@ -6,8 +6,7 @@ public class sparse_arrays {
 
     for(int i = 0; i < queries.length; i++) {
       String query = queries[i];
-      for(int j = 0; j < strings.length; j++) {
-        String str = strings[j];
+      for(String str: strings) {
         if(query.equals(str)) {
           matches[i] += 1;
         }
